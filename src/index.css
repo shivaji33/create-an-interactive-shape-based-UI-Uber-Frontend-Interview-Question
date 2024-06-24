@@ -1,0 +1,21 @@
+.box {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  transition: background-color .2s ease;
+}
+
+.box.enable {
+  border: 1px solid black;
+}
+
+.box.active {
+  background-color: green;
+}
+
+.box-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: fit-content;
+}
